@@ -32,14 +32,14 @@
 }
 
 .navbar.scrolled {
-    height: 100px;
+    height: 80px;
     background-color: #f7f4f2; /* Background color after scrolling */
 }
 
 .navbar .logo{
-    margin-left: -120px;
-    width: 250px; /* Fixed width for the logo */
-    height: 60px; /* Maintains aspect ratio */
+    margin-left: -130px;
+    width: 200px; /* Fixed width for the logo */
+    height: 40px; /* Maintains aspect ratio */
     transition: none; /* Prevents scaling on scroll */
 }
 
