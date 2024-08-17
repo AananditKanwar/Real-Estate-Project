@@ -43,7 +43,7 @@
     transition: none; /* Prevents scaling on scroll */
 }
 
-h1 {
+.content h1{
     text-align: center;
     margin-top: 0px;
     margin-bottom: 32px;
@@ -97,4 +97,11 @@ h1 {
     font-family: Prodigysans, sans-serif;
     font-size: 18px;
     line-height: 1.6;
+}
+
+@media (max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
 }
