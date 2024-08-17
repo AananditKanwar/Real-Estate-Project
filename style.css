@@ -8,7 +8,7 @@
 
 .hero{
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
     position: relative;
     padding: 0 5%;
@@ -17,20 +17,30 @@
     justify-content: center;
 }
 
-nav{
+.navbar{
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     padding: 20px 8%;
+    
     display: flex;
     align-items: center;
+
+    transition: background-color 0.3s ease;
+    background-color: transparent;
 }
 
-nav .logo{
+.navbar.scrolled {
+    height: 100px;
+    background-color: #f7f4f2; /* Background color after scrolling */
+}
+
+.navbar .logo{
     margin-left: -120px;
-    width: 17%;
-    height: 17%;
+    width: 250px; /* Fixed width for the logo */
+    height: 60px; /* Maintains aspect ratio */
+    transition: none; /* Prevents scaling on scroll */
 }
 
 h1 {
