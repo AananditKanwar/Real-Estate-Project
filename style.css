@@ -28,16 +28,35 @@ nav{
 }
 
 nav .logo{
-    margin-left: -140px;
+    margin-left: -120px;
+    width: 17%;
+    height: 17%;
 }
 
 h1 {
     text-align: center;
     margin-top: 0px;
     margin-bottom: 32px;
+    color: azure;
     font-family: "Bricolage Grotesque", sans-serif;
     font-weight: 800;
-    font-size: 72px;
+    font-size: 85px;
     line-height: 1.1;
     font-weight: 700;
+}
+
+.color-secondary-2{
+    color: #f0c79f;
+}
+
+.back-video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    background-color: rgba(28, 33, 43, 0.5);
 }
