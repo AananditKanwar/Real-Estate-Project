@@ -41,6 +41,10 @@ html {
     background-color: #f7f4f2; /* Background color after scrolling */
 }
 
+.navbar.hidden {
+    background-color: transparent;
+}
+
 .navbar .logo{
     margin-left: -130px;
     width: 200px; /* Fixed width for the logo */
