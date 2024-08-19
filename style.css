@@ -45,6 +45,10 @@ html {
     background-color: transparent;
 }
 
+.navbar.hidden img{
+    opacity: 0;
+}
+
 .navbar .logo{
     margin-left: -130px;
     width: 200px; /* Fixed width for the logo */
