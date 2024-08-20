@@ -296,3 +296,81 @@ html {
     max-height: 30px; /* Control the height of the logos */
     object-fit: contain;
 }
+
+.container-test{
+    max-width: 1170px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.section-header{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-header .title{
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #1c212b;
+    line-height: 1.2;
+}
+
+.testimonials{
+   padding: 100px 0;
+}
+
+.testimonials-item{
+    background-color: red;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.testimonials-item .info{
+    display: flex;
+    align-items: center;
+
+}
+
+.testimonials-item img{
+    max-width: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+.testimonials-item .name{
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #1c212b;
+    line-height: 1.2;
+}
+
+.testimonials-item .job{
+    text-transform: capitalize;
+    color: #1c212b;
+}
+
+.testimonials-item p{
+    margin-top: 20px;
+    color: #666;
+}
+
+.testimonials-item .rating{
+    margin-top: 15px;
+    font-size: 14px;
+    color: #89725b;
+}
+
+.testimonials .swiper-pagination{
+    position: relative;
+    margin-top: 40px;
+    bottom: auto;
+}
+
+.testimonials .swiper-pagination-bullet{
+    height: 17px;
+    width: 17px;
+    background-color: #f0c79f;
+}
