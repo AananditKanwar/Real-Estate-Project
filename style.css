@@ -138,7 +138,7 @@ html {
 }
 
 .scroll1{
-    font-size: 55px;
+    font-size: 40px;
     font-weight: 100;
     border: 3px solid;
     border-radius: 100%;
@@ -168,6 +168,7 @@ html {
     color: #fff;
     background-color: #f0c79f;
     border-color: #f0c79f; 
+    transform: scale(1.2);
     transition: 0.3s;
 }
 
@@ -177,7 +178,7 @@ html {
     color: #fff;
     background-color: #f0c79f;
     border-color:#f0c79f; 
-    transform: translateY(-15px);
+    transform: scale(1.2);
     transition: 0.3s;
 }
 
@@ -461,6 +462,7 @@ html {
     
 }
 .footer-button {
+    font-family: "Bricolage Grotesque", sans-serif;;
     background-color: #89725b; /* Button color matching the image */
     color: #fff;
     padding: 10px 20px;
@@ -470,6 +472,12 @@ html {
     cursor: pointer;
     margin-top: 20px;
     display: inline-block;
+    transition: 0.3s;
+}
+
+.footer-button:hover{
+    background-color: #ba9e81;
+    transition: 0.3s;
 }
 
 .footer-middle {
