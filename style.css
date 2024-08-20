@@ -34,6 +34,8 @@ html {
 
     transition: background-color 0.3s ease;
     background-color: transparent;
+
+    z-index: 3;
 }
 
 .navbar.scrolled {
@@ -144,7 +146,6 @@ html {
     margin: 20px;
     padding: 10px;
     color: #fff;
-    
 }
 
 .scroll1:hover{
@@ -152,7 +153,7 @@ html {
     padding: 10px;
     color: #fff;
     background-color: #f0c79f;
-    border: none;
+    border: none; 
     transition: 0.3s;
 }
 @media (max-aspect-ratio: 16/9){
@@ -190,6 +191,7 @@ html {
 
 .list{
     padding-top: 35px;
+    padding-bottom: 35px;
     background-color: #1c212b;
 }
 
@@ -215,6 +217,7 @@ html {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    z-index: 1;
 }
 
 .property-price {
@@ -227,6 +230,7 @@ html {
     max-width: 165.95px;
     position: relative;
     top: -46px;
+    z-index: 2;
 }
 
 .property-card h3 {
@@ -262,4 +266,33 @@ html {
 
 .property-details i{
     margin: 0 8px 0 0;
+}
+
+.partners-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f7f4f2;
+}
+
+.partners-title {
+    color: #a18d7f; /* Light brown color similar to the text in the image */
+    font-size: 18px;
+    margin-bottom: 40px;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.partners-logos {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 40px; /* Adjust the spacing between the logos */
+    justify-items: center;
+    align-items: center;
+    padding-left: 280px;
+    padding-right: 280px;
+}
+
+.partners-logos img {
+    max-width: 100%;
+    max-height: 30px; /* Control the height of the logos */
+    object-fit: contain;
 }
