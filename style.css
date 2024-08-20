@@ -317,14 +317,15 @@ html {
 }
 
 .testimonials{
-   padding: 100px 0;
+   background-color: #f7f4f2;
 }
 
 .testimonials-item{
-    background-color: red;
+    background-color: #fff;
     padding: 30px;
     border-radius: 30px;
 }
+
 
 .testimonials-item .info{
     display: flex;
@@ -340,10 +341,11 @@ html {
 }
 
 .testimonials-item .name{
-    font-size: 24px;
+    font-size: 22px;
+    font-family: "Bricolage Grotesque", sans-serif;
     text-transform: capitalize;
     font-weight: 600;
-    color: #1c212b;
+    color: grey;
     line-height: 1.2;
 }
 
@@ -354,7 +356,11 @@ html {
 
 .testimonials-item p{
     margin-top: 20px;
-    color: #666;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 32px;
+    line-height: 1.1;
+    font-weight: 800;
+    color: black;
 }
 
 .testimonials-item .rating{
