@@ -18,5 +18,5 @@ let isScrolling;
             // Set a timeout to add the hidden class after scrolling stops
             isScrolling = setTimeout(function() {
                 navbar.classList.add('hidden');
-            }, 1000); // Adjust timeout to control how long the navbar stays visible after scrolling stops
+            }, 1500); // Adjust timeout to control how long the navbar stays visible after scrolling stops
         });
