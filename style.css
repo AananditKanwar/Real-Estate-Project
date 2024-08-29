@@ -33,9 +33,9 @@ html {
     align-items: center;
 
     transition: background-color 0.3s ease;
-    background-color: transparent;
+    background-color: white;
 
-    z-index: 3;
+    z-index: 10;
 }
 
 .navbar.scrolled {
@@ -193,6 +193,7 @@ html {
     display: flex;
     align-items: center;
     text-align: center;
+    padding-top: 80px;
     padding-left: 40px;
     padding-right: 40px;
     background-color: #1c212b;
