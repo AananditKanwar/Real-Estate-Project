@@ -22,41 +22,6 @@ html {
     background-color: rgba(28, 33, 43, 0.5);
 }
 
-.navbar{
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 20px 8%;
-    
-    display: flex;
-    align-items: center;
-
-    transition: background-color 0.3s ease;
-    background-color: white;
-
-    z-index: 10;
-}
-
-.navbar.scrolled {
-    height: 80px;
-    background-color: #f7f4f2; /* Background color after scrolling */
-}
-
-.navbar.hidden {
-    background-color: transparent;
-}
-
-.navbar.hidden img{
-    opacity: 0;
-}
-
-.navbar .logo{
-    margin-left: -130px;
-    width: 200px; /* Fixed width for the logo */
-    height: 40px; /* Maintains aspect ratio */
-    transition: none; /* Prevents scaling on scroll */
-}
 
 .content{
     display: flex;
@@ -532,4 +497,67 @@ html {
 .footer-top .margin-bottom-0{
     font-size: 72px;
     font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.navbar{
+    background-color: #fff;
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+    overflow: hidden;
+    position: fixed;
+}
+
+.navbar-nav {
+    margin: 0 auto; /* Center the navbar */
+    display: flex;
+
+    width: 100%;
+}
+.nav-item {
+    margin: 0 30px; /* Adjust the margin for spacing between items */
+}
+
+.navbar-toggler{
+    border: none;
+    font-size: 1.25rem;
+
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link{
+    color: #666777;
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-family: "Bricolage Grotesque", sans-serif;
+    position: relative;
+}
+
+.nav-link:hover , .nav-link.active{
+    color: #000;
+}
+
+@media (min-width: 991px){
+    .nav-link::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #f0c79f;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before, .nav-link.active::before{
+        width: 100%;
+        visibility: visible;   
+    }
 }
