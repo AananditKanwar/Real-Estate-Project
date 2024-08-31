@@ -265,7 +265,6 @@ html {
 
 .testimonials{
    background-color: #f7f4f2;
-   padding-bottom: 70px;
 }
 
 .testimonials-item{
@@ -559,6 +558,10 @@ iframe{
         overflow: hidden;
     }
 
+    .property-card{
+        transform: scale(0.9);
+    }
+
     .partners-logos {
         grid-template-columns: repeat(2, 1fr);
         padding-left: 20px;
@@ -573,29 +576,40 @@ iframe{
         overflow: hidden;
     }
 
-
-
     .map iframes{
         display: inline;
         overflow: hidden;
         width: 100%;
     }
 
+    .footer-top .margin-bottom-0 {
+        font-size: 50px;
+    }
+
+    .footer-logo{
+        margin-left: 15%;
+    }
+    
     .footer-logo img {
-        width: 50%;
-        margin-left: 25%;
+        display: none;
+        width: 70%;
+        overflow: hidden;    
     }
 }
 
 /* Tablet View */
 @media screen and (min-width: 768px) and (max-width: 991px) {
+    .noa{
+        display: none;
+    }
+    
     .content h1 {
         font-size: 64px;
     }
 
     .property-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
+        gap: 1px;
         overflow: hidden;
     }
 
@@ -607,5 +621,9 @@ iframe{
 
     .grid-quarters {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .property-card{
+        transform: scale(0.9);
     }
 }
