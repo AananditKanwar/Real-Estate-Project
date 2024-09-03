@@ -538,9 +538,6 @@ iframe{
     background-color: #1c212b;
 }
 
-.navbar-toggler {
-    margin-left: 300px;
-}
 
 /*4K displays*/
 @media screen and (min-width: 2560px) {
@@ -700,6 +697,10 @@ iframe{
 
 /* Tablet View */
 @media screen and (min-width: 768px) and (max-width: 991px) {
+    .navbar-toggler {
+        margin-left: 300px;
+    }
+    
     .noa{
         display: none;
     }
