@@ -43,7 +43,7 @@ html {
 }
 
 .back-video{
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     width: 100%;
@@ -461,12 +461,12 @@ html {
 }
 
 .navbar-nav {
-    margin: 0 auto; /* Center the navbar */
+    margin: 0 auto; 
     display: flex;
     width: 100%;
 }
 .nav-item {
-    margin: 0 30px; /* Adjust the margin for spacing between items */
+    margin: 0 30px;
 }
 
 .navbar-toggler{
@@ -533,8 +533,6 @@ iframe{
     border-radius: 40px;
     background-color: #1c212b;
 }
-
-/* Media Queries for Responsiveness */
 
 /* Mobile View */
 @media screen and (max-width: 767px) {
