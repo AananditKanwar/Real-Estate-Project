@@ -10,6 +10,9 @@ html {
     box-sizing: border-box;
 }
 
+.body{
+    background-color: #1c212b;
+}
 .hero{
     width: 100%;
     height: 100vh;
@@ -346,6 +349,7 @@ html {
 
 .grid-quarters.footer-photos img{
     max-width: 100%;
+    height: 100%;
     vertical-align: middle;
     display: inline-block;
 }
@@ -534,6 +538,103 @@ iframe{
     background-color: #1c212b;
 }
 
+.navbar-toggler {
+    margin-left: 300px;
+}
+
+/*4K displays*/
+@media screen and (min-width: 2560px) {
+    .navbar{
+        height: 100px;
+    }
+    .navbar a{
+        font-size: 25px;
+    }
+    .back-video{
+        position: absolute;
+    }
+
+    .content{
+        margin-bottom: 180px;
+    }
+
+    .container-test {
+        max-width: 2080px;
+    }
+    .content h1 {
+        font-size: 120px;
+        line-height: 1.2;
+    }
+
+    .scroll1{
+        font-size: 4rem;
+    }
+
+    .landing-2-hero-bottom {
+        max-width: 2000px;
+        font-size: 100px;
+    }
+
+    .property-grid{
+        max-width: 2200px;
+        grid-gap: 60px;
+    }
+    .property-card{
+        transform: scale(1.03);
+        border-radius: 16px;
+    }
+    .property-card img {
+        height: 200px;
+    }
+
+    .property-card h3 {
+        font-size: 2rem;
+    }
+
+    .property-card p {
+        font-size: 1.5rem;
+    }
+
+    .property-details span {
+        font-size: 1.5rem;
+    }
+
+
+    .footer-top .margin-bottom-0 {
+        font-size: 100px;
+    }
+
+    .footer-logo img {
+        margin-left: 23.30%;
+    }
+    .section-title h2 {
+        font-size: 5.33rem;
+    }
+    
+    .footer-button{
+        font-size: 1.77rem;
+    }
+
+    .scroll2{
+        margin-top: 40px;
+        font-size: 35px;
+    }
+
+    .partners-title{
+        font-size: 32px;
+    }
+    .partners-logos img{
+        max-height: 53.3px;
+    }
+    .testimonials-item p{
+        font-size: 57px;
+    }
+    .testimonials-item .rating{
+        font-size: 25px;
+    }
+}
+
+
 /* Mobile View */
 @media screen and (max-width: 767px) {
     
@@ -543,7 +644,7 @@ iframe{
         box-sizing: border-box;
     }
     .content h1 {
-        font-size: 48px;
+        font-size: 44px;
         line-height: 1.2;
     }
 
@@ -593,6 +694,8 @@ iframe{
         width: 70%;
         overflow: hidden;    
     }
+
+    
 }
 
 /* Tablet View */
@@ -623,5 +726,29 @@ iframe{
 
     .property-card{
         transform: scale(0.9);
+    }
+
+}
+
+/* Laptop-small View */
+@media screen and (min-width: 1024px) and (max-width: 1339px) {
+    .property-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1px;
+        overflow: hidden;
+    }
+
+    .property-card{
+        transform: scale(0.9);
+    }
+
+    .noa{
+        display: none;
+    }
+
+    .partners-logos {
+        grid-template-columns: repeat(3, 1fr);
+        padding-left: 100px;
+        padding-right: 100px;
     }
 }
